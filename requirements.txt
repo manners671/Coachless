@@ -1,0 +1,7 @@
+streamlit
+openai
+opencv-python
+Pillow
+yt-dlp
+mediapipe
+fpdf

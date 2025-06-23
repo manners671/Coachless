@@ -1,0 +1,115 @@
+/* ==== Base Reset ==== */
+body, .stApp {
+  background: #f7f7f7 !important;
+  color: #2c2c2c !important;
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+}
+
+/* ==== Sidebar ==== */
+section[data-testid="stSidebar"] > div:first-child {
+  background: #fff !important;
+  border-radius: 20px !important;
+  padding: 24px 20px 24px 20px !important;
+  border: 1.5px solid #eaeaea !important;
+  box-shadow: 0 2px 16px rgba(120,0,0,0.06) !important;
+  color: #111 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #b20000 !important;
+  letter-spacing: -1px !important;
+  font-family: 'Segoe UI', Arial, sans-serif !important;
+  font-weight: 700 !important;
+}
+h1 { font-size: 2.8rem !important; }
+h2 { font-size: 2rem !important; }
+h3 { font-size: 1.4rem !important; }
+
+label, .css-1v0mbdj, .css-1y4p8pa {
+  color: #333 !important;
+  font-weight: 600 !important;
+}
+
+/* ===== Universal Inputs & Dropdowns ===== */
+input, textarea, select, div[data-baseweb="select"] > div {
+  background: #fff !important;
+  color: #111 !important;
+  border: 1.5px solid #b20000 !important;
+  border-radius: 7px !important;
+  font-weight: 500 !important;
+}
+
+input:focus, textarea:focus, select:focus, div[data-baseweb="select"] > div:focus-within {
+  outline: 2px solid #b20000 !important;
+  border-color: #b20000 !important;
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder {
+  color: #a6a6a6 !important;
+  opacity: 1 !important;
+}
+
+/* ===== Primary Red Button ===== */
+button, .stButton > button {
+  background: #b20000 !important;
+  color: #fff !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
+  padding: 0.8em 2em !important;
+  border: none !important;
+  font-size: 1.08rem !important;
+  box-shadow: 0 2px 8px rgba(178,0,0,0.11) !important;
+  margin: 0.25em 0.5em 0.25em 0 !important;
+  transition: background 0.18s, box-shadow 0.16s;
+}
+button:hover, .stButton > button:hover {
+  background: #e22 !important;
+  box-shadow: 0 2px 12px rgba(178,0,0,0.13) !important;
+}
+
+/* ===== Section Headers/Accent Bar ===== */
+.stSidebar [data-testid="stSidebarNav"] {
+  border-bottom: 4px solid #b20000 !important;
+}
+.stMarkdown h3, .stMarkdown h2 {
+  color: #b20000 !important;
+  border-bottom: 2px solid #b2000033 !important;
+  padding-bottom: 3px !important;
+}
+
+/* File uploader, slider, etc. */
+label[data-testid="stFileUploaderDropzone"] {
+  background: #fff !important;
+  color: #b20000 !important;
+  border: 1.5px dashed #b20000 !important;
+}
+div[data-baseweb="slider"] .slider_track {
+  background: #b20000 !important;
+  border-radius: 10px !important;
+  height: 8px !important;
+}
+
+/* Frame grid for images (if used) */
+.frame-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)) !important;
+  gap: 10px !important;
+  margin-top: 10px !important;
+}
+.frame-grid img {
+  width: 100% !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 8px #eee !important;
+}
+
+/* ===== Card Panels/Red Info Blocks ===== */
+.red-card {
+  background: #b20000 !important;
+  color: #fff !important;
+  border-radius: 12px !important;
+  padding: 1em 1.5em !important;
+  margin-bottom: 1.2em !important;
+  font-weight: 600 !important;
+}
