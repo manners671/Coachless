@@ -3,5 +3,5 @@ openai
 opencv-python
 Pillow
 yt-dlp
-mediapipe
+mediapipe==0.10.14
 fpdf
