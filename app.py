@@ -16,12 +16,11 @@ import unicodedata
 with open("style.css", encoding="utf-8") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# 1. Load API Key
-api_key_path = Path("C:/Users/manne/OneDrive/Desktop/CoachlessAI/openai_key.txt")
-if not api_key_path.exists():
-    st.error("API key file not found. Ensure openai_key.txt exists in the specified path.")
+if "OPENAI_API_KEY" not in st.secrets:
+    st.error("Missing OpenAI key in Streamlit secrets.")
     st.stop()
-openai.api_key = api_key_path.read_text().strip()
+
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose(static_image_mode=True)
